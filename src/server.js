@@ -1127,11 +1127,11 @@ function startWebServer() {
 
         console.log('');
         console.log('🌐 Web Dashboard:');
-        console.log(`   Local:   http://152.42.160.143:${PORT}`);
-        console.log(`   Binding: http://152.42.160.143:${HOST}:${PORT}`);
+        console.log(`   Local:   http://178.128.56.162:${PORT}`);
+        console.log(`   Binding: http://178.128.56.162:${HOST}:${PORT}`);
 
         ips.forEach(ip => {
-            console.log(`   Network: http://152.42.160.143:${ip}:${PORT}`);
+            console.log(`   Network: http://178.128.56.162:${ip}:${PORT}`);
         });
 
         console.log('   Custom domain akan bekerja dengan reverse proxy');
