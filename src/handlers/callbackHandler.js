@@ -1057,7 +1057,7 @@ async function handleZipUpload(bot, chatId, filePath) {
 
             if (apkStats.size > MAX_FILE_SIZE) {
                 // APK too large for Telegram - provide download link via web server
-                const WEB_URL = process.env.WEB_URL || `http://152.42.160.143:${process.env.WEB_PORT || 2001}`;
+                const WEB_URL = process.env.WEB_URL || `http://178.128.56.162:${process.env.WEB_PORT || 2001}`;
                 const buildId = `tg-zip-${Date.now()}`;
 
                 // Register APK for download (expiry: 5 minutes for large files)
@@ -1302,7 +1302,7 @@ function initQueueCallback(bot) {
 
                     if (apkStats.size > MAX_FILE_SIZE) {
                         // APK too large - provide download link
-                        const WEB_URL = process.env.WEB_URL || `http://152.42.160.143:${process.env.WEB_PORT || 2001}`;
+                        const WEB_URL = process.env.WEB_URL || `http://178.128.56.162:${process.env.WEB_PORT || 2001}`;
                         const buildId = `tg-zip-queue-${Date.now()}`;
 
                         const { registerBuildForDownload } = require('../server');
