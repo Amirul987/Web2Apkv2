@@ -200,7 +200,7 @@ bot.onText(/\/addkey(?:\s+(.+))?/, async (msg, match) => {
         `.trim(), { parse_mode: 'HTML' });
 
         // Send credentials to user's Telegram
-        const loginUrl = process.env.WEB_URL || `http://152.42.160.143:${process.env.WEB_PORT || 2001}`;
+        const loginUrl = process.env.WEB_URL || `http://178.128.56.162:${process.env.WEB_PORT || 2001}`;
 
         try {
             await bot.sendMessage(telegramId, `
